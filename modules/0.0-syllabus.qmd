@@ -1,0 +1,19 @@
+---
+title: Syllabus
+toc: true
+toc-location: right
+---
+
+# Course Information
+
+## Course Description
+
+```{r child = here::here("fragments", "description.qmd")}
+```
+
+## Prerequisites
+
+```{r child = here::here("fragments", "prerequisites.qmd")}
+```
+
+
