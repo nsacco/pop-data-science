@@ -1,0 +1,28 @@
+# Software
+
+> **Please install and configure all of the following _before_ the first class meeting.**
+
+### Step 1: Install R and RStudio
+
+- [Download R](https://cloud.r-project.org) (version **4.0.2 or later**).  
+- [Download RStudio Desktop](https://posit.co/download/rstudio/).
+
+These two programs will form the core environment for all coding exercises and assignments in this course.
+
+### Step 2: Mac Users – Install XQuartz
+
+- [Download and install XQuartz](https://www.xquartz.org/).  
+  This tool is required for generating some figures and plots in R.  
+- Windows and Linux users can **skip this step**.
+
+### Step 3: Sign Up for Posit Cloud
+
+- Go to [Posit Cloud](https://posit.cloud/plans/free) and create a free account.  
+- Posit Cloud provides an **online RStudio environment** you can access through your browser.  
+  It’s a great backup if your local setup doesn’t work or you’re away from your own computer.
+
+> *Note:* **Posit** is the company that develops **RStudio**, the integrated development environment (IDE) we’ll use throughout this course.
+
+### ✅ You’re Ready!
+
+Once you’ve installed and tested R, RStudio, and (if needed) XQuartz,   your environment will be ready for all class exercises and labs.

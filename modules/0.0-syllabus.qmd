@@ -1,8 +1,8 @@
----
-title: Syllabus
-toc: true
-toc-location: right
----
+<!---
+#title: Syllabus
+#toc: true
+#toc-location: right
+#--->
 
 # Course Information
 
