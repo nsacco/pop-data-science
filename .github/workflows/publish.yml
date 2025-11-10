@@ -2,15 +2,12 @@ name: Build and deploy Quarto site
 
 on:
   push:
-    branches: [main]
-  pull_request:
-    branches: [main]
-  workflow_dispatch:   # allows manual trigger from GitHub UI
+    branches: [ main ]
+  workflow_dispatch:
 
 jobs:
   build-deploy:
     runs-on: ubuntu-latest
-
     permissions:
       contents: write
       pages: write
@@ -33,18 +30,17 @@ jobs:
         with:
           packages: |
             any::tidyverse
-            any::quarto
             any::knitr
             any::rmarkdown
             any::sf
             any::ggplot2
 
-      - name: Render Quarto site
+      - name: Render site
         run: quarto render
 
       - name: Publish to GitHub Pages
-        uses: quarto-dev/quarto-actions/publish@v2
+        uses: peaceiris/actions-gh-pages@v4
         with:
-          target: gh-pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          publish_branch: gh-pages
